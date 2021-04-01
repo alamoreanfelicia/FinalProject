@@ -1,0 +1,346 @@
+:root {
+  --pink: #CFC3B9;
+  --dark-pink: #d8c7b9;
+  --flower-color: #bea3a0;
+  --background: rgb(211, 211, 211);
+  --details-background: #ffeee1;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-size: 20px;
+    overflow-x: hidden;
+    color: var(--background);
+    font-family: 'Philosopher', sans-serif;
+  }
+
+.page-container {
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+/* nav bar */
+nav {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+    justify-content: space-between;
+    padding: 0 5%;
+    height: 100px;
+}
+
+nav .logo {
+    float: left;
+    transition:all 2s ease-in-out;
+    margin: 0 auto;
+    margin: 0 0 0 30px;
+}
+
+nav .nav-list {
+  float: right;
+  padding: 0;
+  margin: 0;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 50px 0 0;
+}
+
+
+
+nav .nav-list li {
+  list-style: none;
+
+}
+
+nav .nav-list a {
+  display: block;
+  padding: 5px 0;
+  font-size: 25px;
+  font-weight: 100;
+  text-decoration: none;
+  color: var(--flower-color);
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+nav .nav-list a:hover{
+  border-bottom: 2px solid var(--flower-color);
+}
+
+#nav-toggle {
+  position: absolute;
+  top: -100px;
+}
+
+nav .icon-burger {
+  display: none;
+  position: relative;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+nav .icon-burger .line {
+  width: 30px;
+  height: 5px;
+  background-color: #fff;
+  margin: 5px;
+  border-radius: 3px;
+  transition: all .3s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  nav .logo {
+    display: none;
+    width: auto;
+    justify-content: center;
+  }
+  nav .nav-list {
+    float: none;
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    right: 0;
+    top: 100px;
+    bottom: 100%;
+    height: auto;
+    width: auto;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: var(--pink);
+    opacity: 60%;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+  }
+  nav .nav-list a {
+    font-size: 20px;
+  }
+  nav :checked ~ .nav-list {
+    bottom: 0;
+  }
+  nav .icon-burger {
+    display: block;
+  }
+  nav :checked ~ .icon-burger .line:nth-child(1) {
+    transform: translateY(10px) rotate(225deg);
+  }
+  nav :checked ~ .icon-burger .line:nth-child(3) {
+    transform: translateY(-10px) rotate(-225deg);
+  }
+  nav :checked ~ .icon-burger .line:nth-child(2) {
+    opacity: 0;
+  }
+}
+
+/* Despre noi */
+
+.main-content {
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('./images/prima_pag.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  top: 0;
+}
+
+.content-text {
+  color: var(--dark-pink);
+  width: 100%;
+  top: 30%;
+  text-align: center;
+  padding: 100px;
+  position: absolute;
+}
+
+.content-text h1 {
+  font-size: 200%;
+  word-spacing: 5px;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  text-transform: uppercase; 
+}
+
+
+.content-text h3 {
+  font-size: 150%;
+  word-spacing: 3px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: 'Allura', cursive;
+  font-weight: lighter;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: lighter;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 200px;
+  transition: background-color 0.2s, border 0.2s, color 0.2;
+}
+
+.btn-full {
+  background-color: transparent;
+  color: var(--flower-color);
+  margin-right: 15px;
+  border: 1px solid var(--flower-color);
+}
+
+.btn-full:hover {
+  background-color: var(--pink);
+  color: black;
+  border: 1px solid black;
+}
+
+
+/* Modele */
+
+.products_introduction {
+  background-color: var(--background);
+  background-size: cover;
+  position: absolute;
+  margin-top: 49.6%;
+  text-align: center;
+  color: black;
+}
+
+.products_introduction::after{
+  content: '';
+  background: var(--flower-color);
+  width: 80px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 98%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#products {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  /* display: flex; */
+}
+
+.row {
+  margin-top: 5%;
+  width: 100rem;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  display: flex;
+  /* grid-template-columns: auto auto auto; */
+  /* grid-column-gap: 10px; */
+
+}
+
+.col-4 {
+  padding: 5px;
+  width: 20%;
+  min-height: 1px;
+  flex-basis: 25%;
+  text-align: center;
+  transition: transform 0.5s;
+  position: relative;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);
+  cursor: pointer;
+  grid-area: 1fr 1fr 1fr;
+}
+
+.col-4 .card-img {
+  width: 50%;
+  border-radius: 5%;
+
+}
+
+.rating .fa{
+  color: var(--flower-color);
+}
+
+.col-4:hover {
+  transform: translateY(-5px);
+}
+
+.col-4 .btn {
+  padding: 5px 15px;
+}
+
+/* Details */
+
+.details-container {
+  background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(./images/details-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  top: 0;
+}
+
+.details_product {
+  display: flex;
+  align-items: center;
+  margin-top: 10%;
+  margin-left: 10%;
+}
+
+.details_product .content{
+  position: absolute;
+  background-color: var(--background);
+  /* padding-left: 6rem; */
+  margin: 5rem 10rem 5rem 8rem;
+  padding: 11rem 10rem 11rem 10rem;
+  color: black;
+  margin-top: 5rem;
+  filter: drop-shadow(0 0.1rem 0.5rem rgb(80, 79, 79));
+}
+
+.details_product .content h2{
+  font-size: 4rem;
+  margin-left: 5rem;
+}
+
+.details_product .content .rating{
+  margin-left: 5rem;
+}
+
+.details_product .content p{
+  margin-left: 5rem;
+}
+
+.details_product .content .price{
+  margin-left: 5rem;
+}
+
+.details_product .content .btn{
+  margin-left: 5rem;
+}
+
+.details_product .image-container img {
+  position: relative;
+  height: 30rem;
+  margin: 2rem 0;
+  filter: drop-shadow(0 0.1rem 0.5rem rgb(80, 79, 79));
+}
+

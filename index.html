@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FREYA Candles</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="./node_modules/bootswatch/dist/lux/bootstrap.min.css"> -->
+</head>
+<body>
+    <div class="page-container">
+        <!-- Navbar -->
+            <nav class="navbar">
+                <input id="nav-toggle" type="checkbox">
+                <div class="logo">
+                    <img src="./images/logo2.png" alt="" width="100px" height="100px">
+                </div>
+                <ul class="nav-list">
+                    <li>
+                        <a href="#" class="normal selected" id="home-page-btn"> Despre Noi </a>
+                    </li>
+                    <li>
+                        <a href="#" class="normal" id="menu-page-btn"> Modele </a>
+                    </li>
+                    <li>
+                        <a href="#" class="normal" id="order-page-btn"> Comanda Online </a>
+                    </li>
+                    <li>
+                        <a href="#" class="normal" id="contact-page-btn"> Contact </a>
+                    </li>
+                    <li>
+                        <a href="#" class="normal" id="contact-page-btn"> Admin </a>
+                    </li>
+                </ul>
+                <!-- <div class="shopping-icon">
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                </div> -->
+                <label for="nav-toggle" class="icon-burger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </label>
+            </div>
+        <!-- end of nav -->
+    
+        <!-- Despre noi -->
+        <div class="main-content">
+            <div class="content-text">
+                <h1>
+                    NOI SUNTEM <span class="colorchange">FREYA CANDLES</span>
+                </h1>
+                 <h3>Freya Candles&Co este un producător local de lumânări din ceară naturală de albine, de soia sau de palmier, a cărui existență se bazează pe principiile sustenabilității. Folosim ceară de la productări locali din Sebeșul de Sus (jud. Sibiu), așa-numiții boștinari, sau din agricultura ecologică. Tehnica de turnare folosită, precum și numeroasele modele pe care le producem creează un concept unic în România, remarcându-se prin eleganță, naturalețe și frumusețe, asemenea zeiței nordice Freya.</h3>
+
+                 <a href="#" class="btn btn-full">Comanda Online</a>
+                 <a href="#" class="btn btn-full">Modelele Noastre</a>
+            </div>
+
+        </div>
+
+
+
+        <!-- Modele -->
+
+        <!-- <div id="products"> -->
+           
+        <!-- <div class="products">
+            <div class="products_introduction">
+                <h2>Modelele Disponibile</h2>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <img src="./images/json/id1.jpg">
+                    <h4>Titlu</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>Pret lei</p>
+                    <a href="details.html" class="btn btn-full">Detalii</a>
+                    <a href="cart.html" class="btn btn-full">Cumpără</a>
+                </div>
+                <div class="col-4">
+                    <img src="./images/json/id2.jpg">
+                    <h4>Titlu</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>Pret lei</p>
+                    <a href="details.html" class="btn btn-full">Detalii</a>
+                    <a href="cart.html" class="btn btn-full">Cumpără</a>
+                </div>
+                <div class="col-4">
+                    <img src="./images/json/id3.jpg">
+                    <h4>Titlu</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>Pret lei</p>
+                    <a href="details.html" class="btn btn-full">Detalii</a>
+                    <a href="cart.html" class="btn btn-full">Cumpără</a>
+                </div>
+                <div class="col-4">
+                    <img src="./images/json/id4.jpg">
+                    <h4>Titlu</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>Pret lei</p>
+                    <a href="details.html" class="btn btn-full">Detalii</a>
+                    <a href="cart.html" class="btn btn-full">Cumpără</a>
+                </div>
+                <div class="col-4">
+                    <img src="./images/json/id1.jpg">
+                    <h4>Titlu</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>Pret lei</p>
+                    <a href="details.html" class="btn btn-full">Detalii</a>
+                    <a href="cart.html" class="btn btn-full">Cumpără</a>
+                </div>
+                <div class="col-4">
+                    <img src="./images/json/id6.jpg">
+                    <h4>Titlu</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>Pret lei</p>
+                    <a href="details.html" class="btn btn-full">Detalii</a>
+                    <a href="cart.html" class="btn btn-full">Cumpără</a>
+                </div>
+                <div class="col-4">
+                    <img src="./images/json/id1.jpg">
+                    <h4>Titlu</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>Pret lei</p>
+                    <a href="details.html" class="btn btn-full">Detalii</a>
+                    <a href="cart.html" class="btn btn-full">Cumpără</a>
+                </div>
+                <div class="col-4">
+                    <img src="./images/json/id8.jpeg">
+                    <h4>Titlu</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>Pret lei</p>
+                    <a href="details.html" class="btn btn-full">Detalii</a>
+                    <a href="cart.html" class="btn btn-full">Cumpără</a>
+                </div>
+                <div class="col-4">
+                    <img src="./images/json/id9.jpg">
+                    <h4>Titlu</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>Pret lei</p>
+                    <a href="details.html" class="btn btn-full">Detalii</a>
+                    <a href="cart.html" class="btn btn-full">Cumpără</a>
+                </div>
+                <div class="col-4">
+                    <img src="./images/json/id1.jpg">
+                    <h4>Titlu</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>Pret lei</p>
+                    <a href="details.html" class="btn btn-full">Detalii</a>
+                    <a href="cart.html" class="btn btn-full">Cumpără</a>
+                </div>
+                
+            </div> -->
+        <!-- </div> -->
+        <div class="products_introduction">
+            <h2>Modelele Disponibile</h2>
+            <div id="products"></div>
+        </div>
+        
+    </div>
+
+    <script src="src/app.js" type="module"></script>
+    
+</body>
+</html>

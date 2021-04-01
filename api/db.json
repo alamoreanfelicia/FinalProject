@@ -1,0 +1,77 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "𝑻𝒉𝒆 𝑩𝒖𝒃𝒃𝒍𝒆/𝑪𝒖𝒃𝒖𝒍",
+      "image": "./images/json/id1.jpg" ,
+      "price": "30" ,
+      "description": "Lumânare decorativă vegană realizată manual din ceară naturală de soia sau palmier. Greutate: 155 g (+/-5g). Dimensiune: 6x6x6 cm. Culori disponibile: alb, verde, roz, roz cristal (palmier), dark cristal (palmier).",
+      "stock": "5" 
+    },
+    {
+      "id": 2,
+      "title": "𝑻𝒉𝒆 𝑺𝒆𝒂𝒔𝒉𝒆𝒍𝒍/𝑺𝒄𝒐𝒊𝒄𝒂",
+      "image": "./images/json/id2.jpg" ,
+      "price": "30",
+      "description": "Lumânare decorativă vegană  realizată manual din ceară naturală de soia. Greutate: 137g (+/-3g). Culori disponibile: alb, natur, roz, gri.",
+      "stock": "5" 
+    },
+    {
+      "id": 3,
+      "title": "𝑻𝒉𝒆 𝑪𝒚𝒍𝒊𝒏𝒅𝒆𝒓/𝑪𝒊𝒍𝒊𝒏𝒅𝒓𝒖𝒍",
+      "image": "./images/json/id3.jpg" ,
+      "price": "30" ,
+      "description": "Lumânare vegană decorativă realizată manual din ceară naturală de soia. Două dimensiuni: 15 cm sau 27 cm (+/-3cm). Greutate: 107 g (15 cm) sau 180 g (27 cm) (+/-3g). Culori disponibile: alb, verde, roz, galben.",
+      "stock": "5" 
+    },
+    {
+      "id": 4,
+      "title": "𝑻𝒉𝒆 𝑰𝒏𝒇𝒊𝒏𝒊𝒕𝒚/𝑰𝒏𝒇𝒊𝒏𝒊𝒕𝒖𝒍",
+      "image": "./images/json/id4.jpg" ,
+      "price": "30" ,
+      "description": "Lumânare vegană decorativă realizată manual din ceară naturală de soia. Greutate: 152g (+/-3g); 20 cm înălțime. Culori disponibile: alb, alb cristal, dark, gri.",
+      "stock": "5" 
+    },
+    {
+      "id": 5,
+      "title": "𝑻𝒉𝒆 𝑩𝒆𝒆𝒔/𝑨𝒍𝒃𝒊𝒏𝒆𝒍𝒆",
+      "image": "./images/json/id5.jpg" ,
+      "price": "30" ,
+      "description": "•Lumânări decorative realizate manual din ceara de albine de la producători locali.       🐝Lumânările din ceară de albine produc ioni negativi, care neutralizează poluanții din aer, curățându-l. Aceste lumânări ajută la eliminarea particulelor de praf, a mirosurilor neplăcute, a sporilor de mucegai și a altor alergeni.",
+      "stock": "5" 
+    },
+    {
+      "id": 6,
+      "title": "𝑻𝒉𝒆 𝑻𝒉𝒐𝒖𝒈𝒉𝒕/𝑮â𝒏𝒅𝒖𝒍",
+      "image": "./images/json/id6.jpg" ,
+      "price": "30" ,
+      "description": "Lumânare decorativă turnată manual.🌾 În ultimele săptămâni am lucrat la prima noastră matriță. Am ales o statuie decorativă pe care am transformat-o în lumânare.🍀Dimensiune: 13 cm (+/-2 cm). Greutate: 330 g (+/-5 g). Disponibilă momentan doar în varianta dark.",
+      "stock": "5" 
+    },
+    {
+      "id": 7,
+      "title": "The Honeycomb/Fagurele",
+      "image": "./images/json/id7.jpg" ,
+      "price": "30" ,
+      "description": "Lumânările noastre decorative sunt disponibile și din ceară de albine de la producători locali. Dar asta nu înseamnă că ne oprim aici. Am realizat aceste lumânări la cererea unuia dintre voi și pentru că sunt atât de drăguțe, ne-am gândit să le facem disponibile pentru toată lumea.😁 Lumânările vin la set de 3 și fiecare este decorată diferit. Dimensiune: 10 x ø3,5cm.",
+      "stock": "5" 
+    },
+    {
+      "id": 8,
+      "title": "𝑺𝒄𝒉𝒊𝒍𝒍𝒆𝒓",
+      "image": "./images/json/id8.jpeg" ,
+      "price": "30" ,
+      "description": "cea de-a doua matriță realizată de noi.Totul a început cu o statuie rătăcită într-un magazin de vintage.🌾 Lumânarea reprezintă bustul marelui scriitorului german Friedrich Schiller. Dimensiune: 14 cm (+/- 1 cm). Greutate: 180 g (+/- 5 g). Disponibilă momentan pe nuanțe de alb/nud. Get yours now.🍀",
+      "stock": "5" 
+    },
+    {
+      "id": 9,
+      "title": "𝑻𝒉𝒆𝒎/𝑬𝒊",
+      "image": "./images/json/id9.jpg" ,
+      "price": "30" ,
+      "description": "Lumânare decorativă vegană realizată manual din ceara naturală de soia.Dimensiuni: 9 cm (f), 10 cm (m).",
+      "stock": "5" 
+    }
+    
+  ]
+}
