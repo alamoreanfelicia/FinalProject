@@ -287,7 +287,7 @@ nav .icon-burger .line {
 /* Details */
 
 .details-container {
-  background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(./images/details-background.jpg);
+  background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1));
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -319,6 +319,7 @@ nav .icon-burger .line {
 .details_product .content h2{
   font-size: 4rem;
   margin-left: 5rem;
+  font-size:inherit;
 }
 
 .details_product .content .rating{
