@@ -1,12 +1,8 @@
 class UI {
 	constructor() {
 		this.productsDiv = document.getElementById('products');
-		// this.id = document.getElementById('id');
-		// this.title = document.getElementById('title');
-		// this.price = document.getElementById('price');
-		// this.image = document.getElementById('image');
-		// this.description = document.getElementById('description');
 		this.details = document.getElementById('details');
+		this.cartProducts = document.getElementById('cart');
 	}
 
 	showProducts(products) {
@@ -58,6 +54,7 @@ class UI {
 			`;
 		this.details.innerHTML += output;
 	}
+
 }
 
 export const ui = new UI();

@@ -2,6 +2,7 @@
   --pink: #CFC3B9;
   --dark-pink: #d8c7b9;
   --flower-color: #bea3a0;
+  --cart-color: #e0cac8;
   --background: rgb(211, 211, 211);
   --details-background: #ffeee1;
 }
@@ -227,7 +228,7 @@ nav .icon-burger .line {
   height: 5px;
   border-radius: 5px;
   position: absolute;
-  bottom: 98%;
+  bottom: 96%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -237,17 +238,20 @@ nav .icon-burger .line {
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
-  /* display: flex; */
+  display: grid;
+  grid-template: auto/1fr 1fr 1fr;
+  align-items: center;
 }
 
 .row {
-  margin-top: 5%;
-  width: 100rem;
+  /* margin-top: 5%; */
+  margin: 6% 15% 0 15%;
+  /* width: 50rem; */
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  display: flex;
+  /* display: flex; */
   /* grid-template-columns: auto auto auto; */
   /* grid-column-gap: 10px; */
 
@@ -255,8 +259,8 @@ nav .icon-burger .line {
 
 .col-4 {
   padding: 5px;
-  width: 20%;
-  min-height: 1px;
+  width: 100%;
+  min-height: 2px;
   flex-basis: 25%;
   text-align: center;
   transition: transform 0.5s;
@@ -319,7 +323,7 @@ nav .icon-burger .line {
 .details_product .content h2{
   font-size: 4rem;
   margin-left: 5rem;
-  font-size:inherit;
+  font-size: inherit;
 }
 
 .details_product .content .rating{
@@ -345,3 +349,118 @@ nav .icon-burger .line {
   filter: drop-shadow(0 0.1rem 0.5rem rgb(80, 79, 79));
 }
 
+/* Cart */
+.cart-container{
+  background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1));
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  top: 0;
+}
+
+.cart-page{
+  margin: 10rem 20rem 5rem 20rem;
+}
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart-info{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cart-info .info{
+  margin: 2rem auto auto 2rem;
+}
+
+th{
+  text-align: left;
+  padding: 10px;
+  color: black;
+  background-color: var(--cart-color);
+}
+
+td{
+  padding: 10px 5px;
+  color: var(--flower-color);
+}
+
+td input{
+  width: 40px;
+  height: 30px;
+  padding: 5px;
+}
+
+.cart-info td .btn-danger{
+  color: rgb(243, 81, 81);
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.total-price{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.total-price table{
+  border-top: 3px solid;
+  width: 100%;
+  max-width: 400px;
+}
+
+td:last-child{
+  text-align: right;
+}
+
+th:last-child{
+  text-align: right;
+}
+
+
+/* admin */
+.admin_content{
+  text-align: center;
+  margin: 8rem 10rem auto 10rem;
+  color: var(--flower-color);
+}
+
+.admin_content .admin_add_prod .admin_add{
+  width: 60%;
+  border: 2px solid var(--flower-color);
+  border-radius: 5px;
+  margin: 8px 0;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+.admin_content .admin_add_prod .admin_add:focus{
+  border-color: var(--pink);
+  box-shadow: 0 0 8px 0 var(--pink);
+}
+
+.admin_content .admin_btn .add_btn{
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: lighter;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 200px;
+  transition: background-color 0.2s, border 0.2s, color 0.2;
+  background-color: transparent;
+  color: var(--flower-color);
+  border: 1px solid var(--flower-color);
+}
+.admin_content .admin_btn .add_btn:hover{
+  background-color: var(--pink);
+  color: black;
+  border: 1px solid black;
+}

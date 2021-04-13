@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cos Cumparaturi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="cart-container">
+        <!-- Navbar -->
+        <nav class="navbar">
+            <input id="nav-toggle" type="checkbox">
+            <div class="logo">
+                <img src="./images/logo2.png" alt="" width="100px" height="100px">
+            </div>
+            <ul class="nav-list">
+                <li>
+                    <a href="#" class="normal selected" id="home-page-btn"> Despre Noi </a>
+                </li>
+                <li>
+                    <a href="#" class="normal" id="menu-page-btn"> Modele </a>
+                </li>
+                <li>
+                    <a href="#" class="normal" id="order-page-btn"> Comanda </a>
+                </li>
+                <li>
+                    <a href="#" class="normal" id="contact-page-btn"> Contact </a>
+                </li>
+                <li>
+                    <a href="#" class="normal" id="contact-page-btn"> Admin </a>
+                </li>
+            </ul>
+            <!-- <div class="shopping-icon">
+                <a href="#" class="fas fa-shopping-cart"></a>
+            </div> -->
+            <label for="nav-toggle" class="icon-burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>
+        </div>
+        <!-- end of nav -->
+        <div id="cart">
+            <div class="cart-page">
+                <table>
+                    <tr>
+                        <th>Produs</th>
+                        <th>Cantitate</th>
+                        <th>Subtotal</th>
+                        <th>Sterge</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="cart-info">
+                                <img src="./images/json/id1.jpg" width="15%" height="15%">
+                                <div class="info">
+                                    <p>titlul</p>
+                                    <small>pretul</small>
+                                </div>
+                            </div>
+                        </td>
+                        <td><input type="number" value="1"></td>
+                        <td>30lei</td>
+                        <td><button class="btn-danger" type="button">X</button></td>
+                    </tr>
+                </table>
+
+                <div class="total-price">
+                    <table>
+                        <tr>
+                            <td>Subtotal</td>
+                            <td>pret</td>
+                        </tr>
+                        <tr>
+                            <td>Transport</td>
+                            <td>pret</td>
+                        </tr>
+                        <tr>
+                            <td>Total</td>
+                            <td>pret</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="src/app.js" type="module"></script>
+    <script src="src/cart.js" type="module"></script>
+</body>
+</html>
