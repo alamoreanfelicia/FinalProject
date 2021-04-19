@@ -13,6 +13,11 @@ try {
       image: item.getAttribute("image"),
       quantity: quantity,
     };
+    if (
+      itemsInCart == null
+    ) {
+      itemsInCart = []
+    }
     itemsInCart.push({ product });
   
     localStorage.setItem("cart", JSON.stringify(itemsInCart));

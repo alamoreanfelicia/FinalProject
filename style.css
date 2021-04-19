@@ -144,7 +144,7 @@ nav .icon-burger .line {
 /* Despre noi */
 
 .main-content {
-  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('./images/prima_pag.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('./images/primapag5.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -158,7 +158,7 @@ nav .icon-burger .line {
 .content-text {
   color: var(--dark-pink);
   width: 100%;
-  top: 30%;
+  top: 25%;
   text-align: center;
   padding: 100px;
   position: absolute;
@@ -167,9 +167,9 @@ nav .icon-burger .line {
 .content-text h1 {
   font-size: 200%;
   word-spacing: 5px;
-  letter-spacing: 3px;
-  margin-bottom: 20px;
+  letter-spacing: 0.5em;
   text-transform: uppercase; 
+  line-height: 1.4;
 }
 
 
@@ -177,7 +177,7 @@ nav .icon-burger .line {
   font-size: 150%;
   word-spacing: 3px;
   letter-spacing: 1px;
-  margin-bottom: 10px;
+  margin-top: 10px;
   text-align: center;
   font-family: 'Allura', cursive;
   font-weight: lighter;

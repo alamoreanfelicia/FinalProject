@@ -110,26 +110,25 @@ class UI {
       let output = "";
       let transport = parseInt(12);
       output += `
-		<div class="total-price">
-			<table>
-				<div id="prices">
-				<tr>
-					<td>Subtotal</td>
-					<td>${totalPrice} lei</td>
-				</tr>
-				<tr>
-					<td>Transport</td>
-					<td>${transport} lei</td>
-				</tr>
-				<tr>
-					<td>Total</td>
-					<td>${transport + totalPrice} lei</td>
-				</tr> 
-			</div>`;
+	<div class="total-price">
+                        <table>
+                            <div id="prices">
+                            <tr>
+                                <td>Subtotal</td>
+                                <td>${totalPrice} lei</td>
+                            </tr>
+                            <tr>
+                                <td>Transport</td>
+                                <td>${transport} lei</td>
+                            </tr>
+                            <tr>
+                                <td>Total</td>
+                                <td>${transport + totalPrice} lei</td>
+                            </tr> 
+                        </div>`;
       this.pricesDiv.innerHTML += output;
     } catch {}
   }
-
 
 	showDetails(product) {
 		let output = '';
@@ -152,10 +151,9 @@ class UI {
                 <img src="${product.image}">
             </div>
 		</div>
-			`;
+		`;
 		this.details.innerHTML += output;
 	}
-
 }
 
 export const ui = new UI();
