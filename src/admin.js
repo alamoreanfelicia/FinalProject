@@ -1,74 +1,46 @@
 // Add product to db
 
-
-class UI {
-    constructor() {
-        document.getElementById('add-product').addEventListener('click', addNewProduct);
-        this.productsDiv = document.getElementById('products');
-        this.id = document.getElementById('id');
-        this.title = document.getElementById('title');
-        this.price = document.getElementById('price');
-        this.image = document.getElementById('image');
-        this.description = document.getElementById('description');
-    }
-
-    showProducts(products) {
-        let output = '';
-        products.forEach((product) => {
-            output = `
-         <div class="row" >
-            <div class="col-4">
-                <img src="${product.image}" class="card-img" alt="...">
-                <h4>${product.title}</h4>
-                <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half-o"></i>
-                        <i class="fa fa-star-o"></i>
-                </div>
-                <p>${product.price} lei</p>
-                <button class="add_btn" id="${product.id}">Delete</button>
-            </div>
-        </div>
-         `;
-            this.productsDiv.innerHTML += output;
-        });
-    };
-}
-
-export const ui = new UI();
-
-
-
-
+import { http } from "./http.js";
+document.getElementById('add-product').addEventListener('click', addNewProduct);
 
 function addNewProduct() {
+	
 	const titleValue = document.getElementById('title').value;
 	const priceValue = document.getElementById('price').value;
 	const imageValue = document.getElementById('image').value;
 	const descriptionValue = document.getElementById('description').value;
+	const id = generateId();
 
 	let product = {
+		id: id,
 		title: titleValue,
-		price: priceValue,
 		image: imageValue,
+		price: priceValue,
 		description: descriptionValue,
+		stock: "100"
 	};
 
-	http
-		.post('http://localhost:3000/products', product)
-		.then((data) => getProducts());
+	http.post('http://localhost:3000/products/', product).then(window.location.reload())
 }
 
-document.getElementById('products').addEventListener('click', deleteProduct);
+function generateId() {
+	let characters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 
-function deleteProduct(e) {
-	if (e.target.classList.contains('delete')) {
-		const id = e.target.id;
-		http
-			.delete(`http://localhost:3000/products/${id}`)
-			.then((data) => getProducts())
-			.catch('Error on delete!');
+	let id = "";
+	for (let i = 0; i < 60; i++) {
+		id += characters[Math.floor(Math.random() * characters.length)];
 	}
+	return id;
 }
+
+// document.getElementById('products').addEventListener('click', deleteProduct);
+
+// function deleteProduct(e) {
+// 	if (e.target.classList.contains('delete')) {
+// 		const id = e.target.id;
+// 		http
+// 			.delete(`http://localhost:3000/products/${id}`)
+// 			.then((data) => getProducts())
+// 			.catch('Error on delete!');
+// 	}
+// }

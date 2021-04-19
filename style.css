@@ -57,11 +57,8 @@ nav .nav-list {
   margin: 0 50px 0 0;
 }
 
-
-
 nav .nav-list li {
   list-style: none;
-
 }
 
 nav .nav-list a {
@@ -209,7 +206,6 @@ nav .icon-burger .line {
   border: 1px solid black;
 }
 
-
 /* Modele */
 
 .products_introduction {
@@ -243,6 +239,16 @@ nav .icon-burger .line {
   align-items: center;
 }
 
+#products-admin {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  display: grid;
+  grid-template: auto/1fr 1fr 1fr;
+  align-items: center;
+}
+
 .row {
   /* margin-top: 5%; */
   margin: 6% 15% 0 15%;
@@ -254,7 +260,6 @@ nav .icon-burger .line {
   /* display: flex; */
   /* grid-template-columns: auto auto auto; */
   /* grid-column-gap: 10px; */
-
 }
 
 .col-4 {
@@ -273,7 +278,6 @@ nav .icon-burger .line {
 .col-4 .card-img {
   width: 50%;
   border-radius: 5%;
-
 }
 
 .rating .fa{
@@ -422,7 +426,6 @@ td:last-child{
 th:last-child{
   text-align: right;
 }
-
 
 /* admin */
 .admin_content{
