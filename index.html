@@ -23,7 +23,7 @@
                 </div>
                 <ul class="nav-list">
                     <li>
-                        <a href="./index.html" class="normal selected" id="home-page-btn"> Despre Noi </a>
+                        <a href="./index.html" class="normal" id="home-page-btn"> Despre Noi </a>
                     </li>
                     <li>
                         <a href="#" class="normal" id="menu-page-btn"> Modele </a>
@@ -48,14 +48,38 @@
     
         <!-- Despre noi -->
         <div class="main-content">
+            <div class="slides">
+                <input type="radio" name="r" id="r1" checked>
+                <input type="radio" name="r" id="r2">
+                <input type="radio" name="r" id="r3">
+                <div class="slide s1">
+                    <div class="line"></div>
+                    <h3>Producător local de lumânări din ceară naturală de albine, de soia sau de palmier</h3>
+                    <div class="line2"></div>
+                    <img src="./images/primapag5.jpeg" alt="">
+                </div>
+                <div class="slide">
+                    <div class="line"></div>
+                    <h3>Folosim ceară de la productări locali din jud. Sibiu, sau din agricultura ecologică</h3>
+                    <div class="line2"></div>
+                    <img src="./images/prima_pag6.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <div class="line"></div>
+                    <h3>Ne remarcăm prin eleganță, naturalețe și frumusețe, asemenea zeiței nordice Freya</h3>
+                    <div class="line2"></div>
+                    <img src="./images/prima_pag.jpg" alt="">
+                </div>
+            </div>
+            <div class="navigation">
+                <label for="r1" class="bar"></label>
+                <label for="r2" class="bar"></label>
+                <label for="r3" class="bar"></label>
+            </div>
             <div class="content-text">
                 <h1>
                     <span class="colorchange">FREYA CANDLES</span>
                 </h1>
-                 <h3>Freya Candles&Co este un producător local de lumânări din ceară naturală de albine, de soia sau de palmier, a cărui existență se bazează pe principiile sustenabilității. Folosim ceară de la productări locali din Sebeșul de Sus (jud. Sibiu), așa-numiții boștinari, sau din agricultura ecologică. Tehnica de turnare folosită, precum și numeroasele modele pe care le producem creează un concept unic în România, remarcându-se prin eleganță, naturalețe și frumusețe, asemenea zeiței nordice Freya.</h3>
-
-                 <a href="#" class="btn btn-full">Comanda Online</a>
-                 <a href="#" class="btn btn-full">Modelele Noastre</a>
             </div>
 
         </div>
@@ -68,8 +92,30 @@
             <h2>Modelele Disponibile</h2>
             <div id="products"></div>
         </div>
+
+        <div class="contact-section">
+            <h1>Get in touch</h1>
+            <div class="contact-img">
+                <img src="./images/contact.PNG" alt="">
+            </div>
+            <div class="contact-form">
+                <form class="contact" action="" method="POST">
+                    <input type="text" name="name" class="text-box" placeholder="Your Name" required>
+                    <input type="email" name="name" class="text-box" placeholder="Your Email" required>
+                    <br>
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    <input type="submit" name="submit" class="btn" value="Send">
+                </form>
+            </div>
+            <div class="contact-img2">
+                <img src="./images/contact4.PNG" alt="">
+            </div>
+            
+        </div>
         
     </div>
+
+    
 
     <script src="src/app.js" type="module"></script>
     

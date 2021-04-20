@@ -144,7 +144,6 @@ nav .icon-burger .line {
 /* Despre noi */
 
 .main-content {
-  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('./images/primapag5.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -153,6 +152,103 @@ nav .icon-burger .line {
   position: absolute;
   text-align: center;
   top: 0;
+}
+
+.navigation {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.bar{
+  width: 50px;
+  height: 10px;
+  border: 2px solid #fff;
+  margin: 6px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.bar:hover{
+  background: #fff;
+}
+
+input[name="r"]{
+  position: absolute;
+  visibility: hidden;
+}
+
+.slides {
+  width: 500%;
+  height: 120%;
+  display: flex;
+}
+
+.slide{
+  width: 20%;
+  transition: 0.6s;
+}
+
+.slide::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.3;
+}
+
+.slide img{
+  width: 100%;
+  height: 100%;
+}
+
+.line{
+  position: absolute;
+  margin-top: 30%;
+  width: 500px;
+  height: 3px;
+  background: gray;
+  margin: 430px auto auto 32%;
+  z-index: 1;
+}
+
+.line2{
+  position: absolute;
+  margin-top: 30%;
+  width: 500px;
+  height: 3px;
+  background: gray;
+  margin: 570px auto auto 32%;
+  z-index: 1;
+}
+
+.slide h3{
+  width: 600px;
+  position: absolute;
+  font-size: 180%;
+  word-spacing: 3px;
+  letter-spacing: 1px;
+  margin: 30% auto auto 29%;
+  font-family: 'Allura', cursive;
+  font-weight: bold;
+  font-weight: lighter;
+  color: var(--dark-pink);
+  z-index: 1;
+}
+
+#r1:checked ~ .s1{
+  margin-left: 0;
+}
+#r2:checked ~ .s1{
+  margin-left: -20%;
+}
+#r3:checked ~ .s1{
+  margin-left: -40%;
 }
 
 .content-text {
@@ -170,17 +266,6 @@ nav .icon-burger .line {
   letter-spacing: 0.5em;
   text-transform: uppercase; 
   line-height: 1.4;
-}
-
-
-.content-text h3 {
-  font-size: 150%;
-  word-spacing: 3px;
-  letter-spacing: 1px;
-  margin-top: 10px;
-  text-align: center;
-  font-family: 'Allura', cursive;
-  font-weight: lighter;
 }
 
 .btn {
@@ -224,7 +309,7 @@ nav .icon-burger .line {
   height: 5px;
   border-radius: 5px;
   position: absolute;
-  bottom: 96%;
+  bottom: 98%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -250,16 +335,11 @@ nav .icon-burger .line {
 }
 
 .row {
-  /* margin-top: 5%; */
   margin: 6% 15% 0 15%;
-  /* width: 50rem; */
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  /* display: flex; */
-  /* grid-template-columns: auto auto auto; */
-  /* grid-column-gap: 10px; */
 }
 
 .col-4 {
@@ -466,4 +546,94 @@ th:last-child{
   background-color: var(--pink);
   color: black;
   border: 1px solid black;
+}
+
+/* contact */
+.contact-section {
+  background-color: var(--background);
+  background-size: cover;
+  margin-top: 205%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.contact-section h1{
+  position: absolute;
+  color: black;
+  margin-top: -400px;
+  margin-left: 650px;
+}
+
+.contact-section::after{
+  content: '';
+  position: absolute;
+  background: var(--flower-color);
+  width: 80px;
+  height: 5px;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: -300px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.contact-section img{
+  margin: auto auto 0 0;
+}
+
+.contact-form{
+  margin-top: 100px;
+  /* text-align: center; */
+  margin: 200px 10px auto auto;
+}
+
+.contact-form .text-box{
+  background: var(--flower-color);
+  color: white;
+  border: none;
+  width: calc(50% - 10px);
+  height: 50px;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.contact-form .text-box:first-child{
+  margin-right: 15px;
+}
+
+.contact-form textarea{
+  background: var(--flower-color);
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  min-height: 200px;
+  max-height: 400px;
+  resize: vertical;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.contact-form .btn{
+  background-color: transparent;
+  color: gray;
+  margin-right: 15px;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+
+.contact-form .btn:hover {
+  background-color: var(--pink);
+  color: black;
+  border: 1px solid black;
+}
+
+.contact-section .contact-img2 {
+  margin: 0 70px auto auto;
 }
