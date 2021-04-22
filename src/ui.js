@@ -77,6 +77,7 @@ class UI {
 				</div>
 			</div>
 		</td>
+    <div class="cart-details">
 		<td><input type="number" value=${
       JSON.parse(localStorage.getItem("cart"))[i]["product"]["quantity"]
     }></td>
@@ -86,8 +87,9 @@ class UI {
       ) *
       parseInt(JSON.parse(localStorage.getItem("cart"))[i]["product"]["price"])
     }lei</td>
-		<td><button class="btn-danger" onClick="removeItem(${i})" type="button">X</button></td>
-		</tr>`;
+		<td><button class="btn-danger" onClick="removeItem(${i})" type="button"><i class="fa fa-trash"></i></button></td>
+		</tr>
+    </div>`;
       }
     } catch {
       output += `<h1>Nici un produs in cos</h1>`;

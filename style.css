@@ -453,6 +453,7 @@ input[name="r"]{
 table{
   width: 100%;
   border-collapse: collapse;
+  display: flex;
 }
 
 .cart-info{
@@ -482,10 +483,23 @@ td input{
   padding: 5px;
 }
 
-.cart-info td .btn-danger{
-  color: rgb(243, 81, 81);
+.cart-details{
+  flex-wrap: wrap;
+}
+
+.cart-details .btn-danger{
+  width: 30px;
+  height: 35px;
+  color: red;
+  background-color: white;
   cursor: pointer;
   font-family: Arial, Helvetica, sans-serif;
+  border: none;
+}
+
+.cart-details .btn-danger i{
+  width: 100%;
+  height: 100%;
 }
 
 .total-price{
@@ -584,7 +598,6 @@ th:last-child{
 
 .contact-form{
   margin-top: 100px;
-  /* text-align: center; */
   margin: 200px 10px auto auto;
 }
 
