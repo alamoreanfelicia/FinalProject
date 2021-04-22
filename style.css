@@ -648,5 +648,24 @@ th:last-child{
 }
 
 .contact-section .contact-img2 {
-  margin: 0 70px auto auto;
+  margin: auto 70px auto 0;
+}
+
+/* Footer */
+
+.footer {
+  background-color: gray;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.footer .social i{
+  color: var(--flower-color);
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.footer p {
+  color: var(--white);
+  font-size: 1.2rem;
 }

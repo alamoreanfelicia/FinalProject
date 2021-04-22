@@ -3,7 +3,7 @@ try {
   } catch {
     itemsInCart = [];
   }
-  
+
   function addToCart(item) {
     quantity = 1;
   
