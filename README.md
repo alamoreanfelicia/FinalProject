@@ -17,3 +17,7 @@ Felicia Alamorean
 ### Start JSON server:
 
 `$ json-server --watch db.json`
+
+### Project Status:
+
+In process

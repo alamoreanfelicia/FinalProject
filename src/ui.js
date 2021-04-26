@@ -92,7 +92,7 @@ class UI {
     </div>`;
       }
     } catch {
-      output += `<h1>Nici un produs in cos</h1>`;
+      output += `<h1>Coșul este gol</h1>`;
     }
     this.cartProductsDiv.innerHTML += output;
   }
